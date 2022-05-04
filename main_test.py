@@ -10,9 +10,10 @@ cap = cv2.VideoCapture(1)
 cap.set(3, width)
 cap.set(4, height)
 
-#pickle_in = open('model_trained_10.p', 'rb')
-#model = pickle.load(pickle_in)
-model = pickle.load('model_trained_10.p')
+pickle_in = open('model_trained_10.p', 'rb')
+model = pickle.load(pickle_in)
+# model = pickle.load('model_trained_10.p')
+
 
 def preprocessing(image):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
