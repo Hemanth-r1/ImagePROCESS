@@ -168,6 +168,6 @@ score = model.evaluate(X_test, Y_test, verbose=0)
 print("test score = ", score[0])
 print('Test accuracy = ', score[1])
 
-pickle_out = open("model_trained_10.p", "wb")  # write bytes
+pickle_out = open('model_trained_10.p', 'wb')  # write bytes
 pickle.dump(model, pickle_out)
 pickle_out.close()
